@@ -2,28 +2,20 @@ import 'package:flutter/material.dart';
 
 class AppColors {
   // main colors
-  static const Color primaryColor = Color(0xff020202);
-  static const Color secondaryColor = Color(0xff3a6798);
-
-  // main dark colors
-  static const Color primaryDarkColor = Color(0xff020202);
-  static const Color secondaryDarkColor = Color(0xff3a6798);
+  static const Color primaryColor = Color(0xff171C28);
+  static const Color secondaryColor = Color(0xffFFFFFF);
 
   // scaffold colors
-  static const Color scaffoldlightColor = Color(0xfffffaf6);
-  static const Color scaffoldDarkColor = Color(0xff020202);
+  static const Color scaffoldlightColor = Color(0xffFFFFFF);
+  static const Color scaffoldDarkColor = Color(0xff171C28);
 
   // inputDecorationTheme
   static const Color inputDecorationLightColor = Color(0xff020202);
   static const Color inputDecorationDarkColor = Color(0xff3a6798);
 
-  // appbar colors
-  static const Color appBarGreyColor = Color(0xfffffaf6);
-  static const Color darkAppBarColor = Color(0xff020202);
-
   // text colors
-  static const Color primaryTextColor = Color(0xff7F8790);
-  static const Color secondaryTextColor = Color(0xff020202);
+  static const Color textLightColor = Color(0xffffffff);
+  static const Color textDarkColor = Color(0xff000000);
 
   // icon colors
   static const Color primaryIconColor = Color(0xff3a6798);

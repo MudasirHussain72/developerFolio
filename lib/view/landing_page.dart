@@ -21,7 +21,7 @@ class _LandingPageState extends State<LandingPage> {
             // summaary and about me section
             Utils().responsiveBuilder(
               mobileBody: const SummaryAndAboutMeMobileView(),
-              desktopBody: const SummaryAndAboutMeDesktopView(),
+              desktopBody: SummaryAndAboutMeDesktopView(),
             ),
             // Skills section
             Utils().responsiveBuilder(

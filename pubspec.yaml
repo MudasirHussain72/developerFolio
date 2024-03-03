@@ -38,6 +38,7 @@ dependencies:
   firebase_core: ^2.25.5
   another_flushbar: ^1.12.30
   fluttertoast: ^8.2.4
+  lottie: ^3.1.0
 
 dev_dependencies:
   flutter_test:
