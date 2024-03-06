@@ -58,6 +58,8 @@ class AppColors {
   static const Color otpBackgroundColor = Color(0xfffffaf6);
   static const Color otpHintColor = Color.fromRGBO(2, 2, 2, 1);
   static const Color newBorderColor = Color(0xff707070);
+//button colors
+  static const Color buttonPrimaryColor = Color(0xff9b73f7);
 
   static const MaterialColor primaryMaterialColor = MaterialColor(
     0xff3a6798,

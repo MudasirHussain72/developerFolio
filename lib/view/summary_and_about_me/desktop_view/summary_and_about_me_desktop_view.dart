@@ -1,18 +1,20 @@
 import 'package:developerfolio/res/app_colors.dart';
+import 'package:developerfolio/res/components/button_widget.dart';
 import 'package:developerfolio/view/view_barrel_file.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
+// ignore: must_be_immutable
 class SummaryAndAboutMeDesktopView extends StatelessWidget {
   SummaryAndAboutMeDesktopView({super.key});
-  List mySocials = [
-    'mySocials',
-    'mySocials',
-    'mySocials',
-    'mySocials',
-    'mySocials',
-    'mySocials',
-    'mySocials',
+  List<Map<String, String>> mySocials = [
+    {'imagePath': 'facebookLogo.png', 'link': 'https://youtube.com'},
+    {'imagePath': 'facebookLogo.png', 'link': 'https://youtube.com'},
+    {'imagePath': 'facebookLogo.png', 'link': 'https://youtube.com'},
+    {'imagePath': 'facebookLogo.png', 'link': 'https://youtube.com'},
+    {'imagePath': 'facebookLogo.png', 'link': 'https://youtube.com'},
+    {'imagePath': 'facebookLogo.png', 'link': 'https://youtube.com'},
+    {'imagePath': 'facebookLogo.png', 'link': 'https://youtube.com'},
   ];
   @override
   Widget build(BuildContext context) {
@@ -59,17 +61,37 @@ class SummaryAndAboutMeDesktopView extends StatelessWidget {
                         fontSize: size.width / 46,
                         color: Theme.of(context).colorScheme.background),
                   ),
-                  SizedBox(height: size.height * 0.1),
+                  SizedBox(height: size.height * 0.05),
                   Wrap(
                     children: mySocials
                         .map((e) => Padding(
                               padding:
                                   const EdgeInsets.only(right: 10, bottom: 10),
-                              child: CircleAvatar(child: FlutterLogo()),
+                              child: InkWell(
+                                onTap: () {
+                                  print(e['link']);
+                                },
+                                child: Container(
+                                  height: 38,
+                                  width: 38,
+                                  decoration: BoxDecoration(
+                                      image: DecorationImage(
+                                          image: AssetImage(
+                                              'assets/images/${e['imagePath']}')),
+                                      shape: BoxShape.circle),
+                                ),
+                              ),
                             ))
                         .toList(),
                   ),
-                  ElevatedButton(onPressed: () {}, child: Text('CONTACT ME'))
+                  SizedBox(height: size.height * 0.02),
+                  Row(
+                    children: [
+                      ButtonWidget(),
+                      SizedBox(width: size.width * 0.02),
+                      ButtonWidget(),
+                    ],
+                  ),
                 ],
               ),
             ),
